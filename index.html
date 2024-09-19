@@ -1,0 +1,364 @@
+<!html>
+<html id="home">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Portofolio</title>
+    <link rel="icon"type="image/x-icon"href="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    document.getElementById('imageUpload').addEventListener('change', function() {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            var imagePreview = document.getElementById('imagePreview');
+            imagePreview.innerHTML = '<img src="' + e.target.result + '" width="200">';
+        };
+
+        reader.readAsDataURL(this.files[0]);
+    });
+    </script>
+    
+    <!-- Header/Navbar -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="brand-name">
+                    <a href="" class="logo">Rendy</a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#myskill">My Skill</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- End Header/Navbar -->
+    
+    <!-- start home -->
+    <section class="home">
+        <div class="container">
+            <div class="row full-screen">
+                <div class="home-content">
+                    <div class="block">
+                        <h6>Hello, My Name is</h6>
+                        <h1>Rendy Fauzi</h1>
+                        <h3>Informatics Engineering</h3>
+                        <div class="btn-contact">
+                            <a href="#contact">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- social links -->
+        <ul class="social-icons">
+            <li class="icon-content">
+                <a href="https://instagram.com/bangrendy015?igshid=OGQ5ZDc2ODk2ZA==">
+                    <div class="filled"></div>
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <div class="tooltip"> Instagram</div>
+            </li>
+            <li class="icon-content">
+                <a href="https://youtube.com/@rendyff6239?si=kO6KMLA8yn0ywIRi">
+                    <div class="filled"></div>
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <div class="tooltip"> YouTube</div>
+            </li>
+            <li class="icon-content">
+                <a href="#">
+                    <div class="filled"></div>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <div class="tooltip"> GitHub</div>
+            </li>
+            <li class="icon-content">
+                <a href="#">
+                    <div class="filled"></div>
+                    <i class="fa-brands fa-stack-overflow"></i>
+                </a>
+                <div class="tooltip"> StackOverFlow</div>
+            </li>
+            <li class="icon-content">
+                <a href="#">
+                    <div class="filled"></div>
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <div class="tooltip"> LinkedIn</div>
+            </li>
+            <li class="icon-content">
+                <a href="#">
+                    <div class="filled"></div>
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <div class="tooltip"> TikTok</div>
+            </li>
+        </ul>
+    </section>
+    
+    <!-- endhome -->
+
+    <!-- about me -->
+        <section class="about-me" id="aboutme">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h1>About Me</h1>
+                        <p class="small text-uppercase">Informations About Me</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="about-content">
+                        <div class="row">
+                            <div class="img">
+                                <img src="renn.jpg" alt="about me">
+                            </div>       
+                    <div class="text">
+                        <h4>I'm Rendy Fauzi</h4>
+                        <h6>A Student <span>Informatics Engineering</span> Cipasung High School of Technology <span>Tasikmalaya</span></h6>
+                        <p>Call me Rendy,
+                            Welcome to My Personal Web Portfolio
+                        </p>
+                        <div class="info">
+                            <div class="list">
+                                <label>Birthday     :</label>
+                                <p>01 Agustus 2002</p>
+                            </div>
+                            <div class="list">
+                                <label>Email        :</label>
+                                <p>bangrendy212@gmail.com</p>
+                            </div>
+                            <div class="list">
+                                <label>Age      :</label>
+                                <p>21 Years Old</p>
+                            </div>
+                            <div class="list">
+                                <label>Phone        :</label>
+                                <p>082117565042</p>
+                            </div>
+                            <div class="list">
+                                <label>Residence    :</label>
+                                <p>Indonesia</p>
+                            </div>
+                            <div class="list">
+                                <label>Hobby    :</label>
+                                <p>Volley Ball</p>
+                            </div>
+                            <div class="list">
+                                <label>Address  :</label>
+                                <p>Kp.Cipari Des.Sukamarame Kec.Caringin Kab.Garut</p>
+                            </div>
+                            <div class="list">
+                                <label>Status   :</label>
+                                <p>Web Develover,Student and Teacher</p>
+                            </div>
+                        </div>
+        </section>
+        
+    <!-- akhir  about me -->
+
+    <!-- education -->
+        <section class="education" id="education"> 
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <h1>Education</h1>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="education-content">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-futbol-o"></i>
+                            </div>
+                            <h5>SMPN 1 CARINGIN</h5>
+                            <p>2015-2018</p>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <h5>SMA IT RIJALUL GOD</h5>
+                            <p>2018-2021</p>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-mortar-board"></i>
+                            </div>
+                            <h5>STT CIPASUNG</h5>
+                            <p>2023-Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- akhir education -->
+
+    <!-- Skill -->
+        <section class="skill" id="myskill">
+            <div class="container">
+                <div class="row align-item-center">
+                    <div class="skill-content">
+                        <div class="row">
+                            <div class="section-title">
+                                <div class="text-box">
+                                </div>
+                                <h1 class="text-center">
+                                  My <span class="output"></span>
+                                  <span class="words">
+                                    <span data-text="Skill"></span>
+                                  </span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-box">
+                                <h6>HTML</h6>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-in" style="width: 80%;">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <h6>CSS</h6>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-in" style="width: 60%;">
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <h6>JS</h6>
+                                <div class="skill-bar" >
+                                    <div class="skill-bar-in" style="width: 25%;">
+                                        <span>25%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <h6>PHP</h6>
+                                <div class="skill-bar" >
+                                    <div class="skill-bar-in" style="width: 20%;">
+                                        <span>20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="skill.jpg" alt="skill">
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Akhir Skills -->
+              
+    <!-- Galery -->
+    <div class="section-title text-center">
+        <h1>Gallery</h1>
+    </div>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="slide">
+                <div class="item" style="background-image: url(skill.jpg);">
+                    <div class="content">
+                        <div class="name">Wizz</div>
+                        <div class="desc">lorem ipsum dolor. sit amet!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(galery1.jpeg);">
+                    <div class="content">
+                        <div class="name">Wizz</div>
+                        <div class="desc">lorem ipsum dolor. sit amet!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(galery2.jpeg);">
+                    <div class="content">
+                        <div class="name">Wizz</div>
+                        <div class="desc">lorem ipsum dolor. sit amet!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(galery3.jpeg);">
+                    <div class="content">
+                        <div class="name">Wizz</div>
+                        <div class="desc">lorem ipsum dolor. sit amet!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(galery4.jpeg);">
+                    <div class="content">
+                        <div class="name">Wizz</div>
+                        <div class="desc">lorem ipsum dolor. sit amet!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(galery5.jpeg);">
+                    <div class="content">
+                        <div class="name">Wizz</div>
+                        <div class="desc">lorem ipsum dolor. sit amet!</div>
+                        <button>See More</button>
+            </div>
+        </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    
+    <!-- Akhir Galery -->
+
+    <!-- Contact --> 
+
+    <!-- akhir contact -->
+
+    <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        RENDY 212
+                    </div>
+
+                    <div class="social">
+                        <a href="https://instagram.com/bangrendy015?igshid=OGQ5ZDc2ODk2ZA==" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com/@rendyff6239?si=kO6KMLA8yn0ywIRi" target="blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" target="blank"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" target="blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- akhir footer -->
+
+    <!-- copyright -->
+    <section class="copyright">
+        <div class="container">
+            <p>&copy; 2023 copyright all right reserved</p>
+        </div>
+    </section>
+    <!-- akhir copyright -->
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
